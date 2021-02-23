@@ -1,0 +1,32 @@
+.servises-section {
+  padding-bottom: 94px;
+}
+.servises-list {
+  display: flex;
+  margin-right: 0;
+  justify-content: space-between;
+}
+.servises-list-itme {
+  margin: 15px;
+}
+.servises-img-box {
+  position: relative;
+}
+.servises-oppression {
+  @include align();
+  justify-content: center;
+  position: absolute;
+  background: rgba(47, 48, 58, 0.8);
+  color: #ffffff;
+  width: 100%;
+  height: 70px;
+  left: 0;
+  bottom: 0;
+  font-family: Roboto;
+  font-style: normal;
+  @include font(14px, 700, 16px);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}

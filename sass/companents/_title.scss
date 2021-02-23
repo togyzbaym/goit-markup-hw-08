@@ -1,0 +1,41 @@
+.title {
+  .hero & {
+    @include font(44px, 900, 60px);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    vertical-align: middle;
+    margin-bottom: 30px;
+  }
+  .team-section &,
+  .servises-section &,
+  .customer-section & {
+    @include font(36px, 700, 42px);
+    font-family: Raleway;
+    text-align: center;
+    color: var(--titles-color);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+  }
+
+  .list-name & {
+    @include font(18px, 500, 21px);
+    color: var(--titles-color);
+    margin-bottom: 10px;
+  }
+
+  .text-list-itme & {
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+    color: var(--titles-color);
+    margin-bottom: 10px;
+  }
+
+  .social-media & {
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+}

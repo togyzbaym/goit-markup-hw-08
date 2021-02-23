@@ -1,0 +1,31 @@
+/*UTILIS*/
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+@import "./utils/mixins";
+
+/*BASE*/
+@import "./base/common";
+@import "./base/container";
+
+/*COMPANENTS*/
+@import "./companents/title";
+@import "./companents/list-name";
+@import "./companents/sub-title";
+@import "./companents/social-media";
+@import "./companents/social-media-list";
+@import "./companents/social-media-link";
+@import "./companents/social-icon";
+@import "./companents/submit";
+@import "./companents/modal-btn";
+
+/*LAYOUT*/
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/text-section";
+@import "./layout/servises";
+@import "./layout/team";
+@import "./layout/customers";
+@import "./layout/footer";
+@import "./layout/footer-forum";
+@import "./layout/backdrop";
+@import "./layout/forum";

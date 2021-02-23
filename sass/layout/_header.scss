@@ -1,0 +1,127 @@
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navigation {
+  display: flex;
+}
+.logo-link {
+  display: flex;
+  display: inline-block;
+  font-family: Raleway;
+  @include font(26px, 700, 30px);
+  color: #2196f3;
+  margin-right: 93px;
+  transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+.logo-part-name {
+  color: #000000;
+}
+
+.nav-list {
+  @include align();
+}
+
+.nav-list-itme {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: 16px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .studio &:first-child::after,
+  .portfolio &:nth-child(even)::after {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    content: "";
+    width: 100%;
+    height: 4px;
+    margin-top: 28px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.nav-list-link {
+  display: flex;
+  @include font(14px, 500, 15px);
+  letter-spacing: 0.02em;
+  color: var(--titles-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: var(--accent-color);
+  }
+}
+
+.contact-list {
+  @include align();
+  margin-left: auto;
+}
+
+.contact-list-itme {
+  @include align();
+  height: 16px;
+
+  &:first-child {
+    margin-right: 50px;
+  }
+}
+
+.contact-list-link {
+  @include align();
+  flex-shrink: 0;
+  @include font(14px, 500, 16px);
+  letter-spacing: 0.02em;
+  color: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+
+    & .my-mail,
+    & .my-mail {
+      fill: var(--accent-color);
+    }
+    & .my-phone,
+    & .my-phone {
+      fill: var(--accent-color);
+    }
+  }
+  &:active {
+    color: var(--active-color);
+  }
+}
+
+.my-mail {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.my-phone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio .header {
+  border-bottom: 1px solid #ececec;
+}

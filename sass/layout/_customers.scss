@@ -1,0 +1,66 @@
+.customer-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.customer-container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.customer-list {
+  @include align();
+  justify-content: space-between;
+  justify-content: center;
+}
+.customer-list-itme {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.costom-list-link {
+  @include align();
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid#AFB1B8;
+  border-radius: 4px;
+  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid var(--accent-color);
+    & .list-hover,
+    & .list-hover {
+      fill: var(--accent-color);
+    }
+  }
+}
+.custom-icon-yaco {
+  width: 44px;
+  height: 50px;
+}
+.list-hover {
+  fill: #afb1b8;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.custom-icon-company {
+  width: 40px;
+  height: 52px;
+}
+.custom-icon-company-1 {
+  width: 41px;
+  height: 43px;
+}
+.custom-icon-foster-petrs {
+  width: 80px;
+  height: 42px;
+}
+.custom-icon-brand {
+  width: 59px;
+  height: 47px;
+}
+.custom-icon-company2 {
+  width: 88px;
+  height: 44px;
+}

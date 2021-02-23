@@ -1,0 +1,51 @@
+.text-section {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.text-container {
+  width: 1200px;
+  padding: 0 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.text-list {
+  display: flex;
+}
+.text-list-itme {
+  display: flexbox;
+  width: 270px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 60px 135px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.icon-tarelka::before {
+  background-image: url("/images/svg/tarelka.svg");
+}
+.icon-clock::before {
+  background-image: url("/images/svg/clock.svg");
+}
+.icon-diagram::before {
+  background-image: url("/images/svg/diagram.svg");
+}
+.icon-cosmonaut::before {
+  background-image: url("/images/svg/cosmonaut.svg");
+}
+.discreption {
+  @include font(14px, 400, 24px);
+  color: var(--discreption-color);
+}
