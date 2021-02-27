@@ -1,43 +1,75 @@
 .container {
+  width: 100%;
+  padding: 0 15;
   margin: 0 auto;
 
-  .header & {
-    width: 1200px;
-    padding: 0 15px;
-    margin: auto auto;
-    justify-content: center;
-    display: flex;
-  }
-  .portfolio-section & {
-    @include align();
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-bottom: 94px;
-  }
   .hero & {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 1200px;
-    padding: 0 15px;
-    /*outline: 2px solid tomato;*/
-    margin-left: auto;
-    margin-right: auto;
+    display: block;
+    text-align: center;
+    outline: 1px solid teal;
   }
-  .servises-section & {
-    display: flex;
-    flex-wrap: wrap;
-    width: 1200px;
-    padding: 0px -15px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 0px;
+  .text-section & {
+    display: block;
+    outline: 1px solid teal;
+  }
+  @media screen and (min-width: 480px) {
+    .container {
+      width: 450px;
+      margin: 0 auto;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 738px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
   }
 }
-.portfolio-section {
-  padding-top: 94px;
-}
+
+// .container {
+//   margin: 0 auto;
+
+//   .header & {
+//     width: 1200px;
+//     padding: 0 15px;
+//     margin: auto auto;
+//     justify-content: center;
+//     display: flex;
+//   }
+//   .portfolio-section & {
+//     @include align();
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     width: 1200px;
+//     padding: 0 15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     padding-bottom: 94px;
+//   }
+//   .hero & {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     width: 1200px;
+//     padding: 0 15px;
+//     /*outline: 2px solid tomato;*/
+//     margin-left: auto;
+//     margin-right: auto;
+//   }
+//   .servises-section & {
+//     display: flex;
+//     flex-wrap: wrap;
+//     width: 1200px;
+//     padding: 0px -15px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     font-size: 0px;
+//   }
+// }
+// .portfolio-section {
+//   padding-top: 94px;
+// }
