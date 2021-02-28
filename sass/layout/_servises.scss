@@ -1,15 +1,27 @@
 .servises-section {
-  padding-bottom: 94px;
+  @media screen and(max-width:1199px) {
+    display: none;
+  }
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+  }
 }
+
 .servises-list {
-  display: flex;
-  margin-right: 0;
-  justify-content: space-between;
+  @media screen and(min-width:1200px) {
+    display: flex;
+    margin-right: 0;
+    justify-content: space-between;
+  }
 }
 .servises-list-itme {
-  margin: 15px;
+  @media screen and(min-width:1200px) {
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
+  }
 }
 .servises-img-box {
+  width: 370px;
   position: relative;
 }
 .servises-oppression {

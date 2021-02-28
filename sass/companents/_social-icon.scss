@@ -4,10 +4,15 @@
   fill: #afb1b8;
   transition: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .footer-container .social-icon {
-  fill: #ffffff;
+  @media screen and(min-width:480) {
+    fill: #ffffff;
+  }
 }
 .social-media-link:focus .social-icon,
 .social-media-link:hover .social-icon {
-  fill: #ffffff;
+  @media screen and(min-width:480) {
+    fill: #ffffff;
+  }
 }

@@ -1,52 +1,70 @@
 .text-section {
-  display: flex;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-@media screen and (min-width: 480px) {
-  .text-list {
-    display: block;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 90px;
+    padding-bottom: 90px;
   }
-  .text-list-itme {
-    display: flexbox;
-    width: 450px;
+}
+.text-list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+.text-list-itme {
+  display: flexbox;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 70px;
+    padding: 60px 225px;
+    margin-bottom: 30px;
+    background-color: #f5f4fa;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &:not(:last-child) {
+    @media screen and(max-width:767px) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
 
     &::before {
-      content: "";
-      display: block;
-      width: 70px;
-      height: 70px;
-      padding: 25px 190px;
-      margin-bottom: 30px;
-      background-color: #f5f4fa;
-      border-radius: 4px;
-      background-position: center;
-      background-repeat: no-repeat;
+      padding: 60px 180px;
     }
-    // &:not(:last-child) {
-    //   margin-right: 30px;
-    // }
   }
-  .icon-tarelka::before {
-    background-image: url("/images/svg/tarelka.svg");
-  }
-  .icon-clock::before {
-    background-image: url("/images/svg/clock.svg");
-  }
-  .icon-diagram::before {
-    background-image: url("/images/svg/diagram.svg");
-  }
-  .icon-cosmonaut::before {
-    background-image: url("/images/svg/cosmonaut.svg");
-  }
-  .discreption {
-    @include font(14px, 400, 24px);
-    color: var(--discreption-color);
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 4 * 30px) / 4);
+    margin: 15px;
+
+    &::before {
+      padding: 60px 135px;
+    }
   }
 }
-@media screen and (min-width: 768px) {
-  .text-list-itme {
-    width: 738px;
-    calc
-  }
+.icon-tarelka::before {
+  background-image: url("/images/svg/tarelka.svg");
+}
+.icon-clock::before {
+  background-image: url("/images/svg/clock.svg");
+}
+.icon-diagram::before {
+  background-image: url("/images/svg/diagram.svg");
+}
+.icon-cosmonaut::before {
+  background-image: url("/images/svg/cosmonaut.svg");
+}
+.discreption {
+  @include font(14px, 400, 24px);
+  color: var(--discreption-color);
 }

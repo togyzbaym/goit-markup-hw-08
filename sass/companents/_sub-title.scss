@@ -1,9 +1,22 @@
 .sub-title {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.187;
-  color: var(--discreption-color);
+  @media screen and (min-width: 480px) {
+    @include font(16px, 400, 19px);
+    text-align: center;
+    color: var(--discreption-color);
+  }
 }
 .team-list-itme .sub-title {
-  margin-bottom: 16px;
+  @media screen and (min-width: 480px) {
+    margin-bottom: 16px;
+  }
 }
+
+// .sub-title {
+//   font-weight: 400;
+//   font-size: 16px;
+//   line-height: 1.187;
+//   color: var(--discreption-color);
+// }
+// .team-list-itme .sub-title {
+//   margin-bottom: 16px;
+// }
