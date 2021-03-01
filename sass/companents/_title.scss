@@ -47,6 +47,12 @@
     margin-right: auto;
     margin-bottom: 50px;
   }
+  .social-media & {
+    @include font(14px, 700, 16px);
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
 }
 //   .team-section &,
 //   .servises-section &,
@@ -66,10 +72,4 @@
 //     margin-bottom: 10px;
 //   }
 
-//   .social-media & {
-//     @include font(14px, 700, 16px);
-//     text-transform: uppercase;
-//     color: #ffffff;
-//     margin-bottom: 20px;
-//   }
 // }
