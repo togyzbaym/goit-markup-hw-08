@@ -34,15 +34,10 @@
   &:focus {
     border-color: var(--accent-color);
   }
-  @media screen and(max-width: 1199px) {
+  @media screen and(min-width: 768px) {
     width: 450px;
   }
-  @media screen and(max-width: 1199px) {
-    width: 450px;
-    margin-left: 159px;
-    margin-right: 159px;
+  @media screen and(min-width: 1200px) {
+    width: 368px;
   }
-  // @media screen and(min-width: 1200px) {
-  //   width: 368px;
-  // }
 }

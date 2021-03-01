@@ -1,13 +1,13 @@
 .footer {
-  //display: flex;
-  // justify-content: center;
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
 }
-.footer-contacts {
-  text-align: center;
-  @media screen and(min-width:768px) {
+// .footer-contacts {
+//   text-align: center;
+// }
+.footer-child {
+  @media screen and(min-wdth: 768px) {
     width: 50%;
   }
 }

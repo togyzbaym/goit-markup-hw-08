@@ -109,20 +109,20 @@
 //   }
 // }
 
-// .my-mail {
-//   width: 16px;
-//   height: 12px;
-//   fill: #757575;
-//   margin-right: 10px;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-// .my-phone {
-//   width: 10px;
-//   height: 16px;
-//   fill: #757575;
-//   margin-right: 10px;
-//   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
+.my-mail {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.my-phone {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 // .portfolio .header {
 //   border-bottom: 1px solid #ececec;
