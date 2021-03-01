@@ -1,10 +1,13 @@
 .social-media {
-  @media screen and(min-width:480px) {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 60px;
-    //width: 206px;
-    //height: 80px;
-    //margin-right: 83px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 60px;
+  //justify-content: center;
+  align-items: center;
+  //width: 206px;
+  //height: 80px;
+  //margin-right: 83px;
+  @media screen and(min-width: 768px) {
+    width: 50%;
   }
 }

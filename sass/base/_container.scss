@@ -1,5 +1,4 @@
 .container {
-  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -7,56 +6,21 @@
   @media screen and (min-width: 480px) {
     .container {
       width: 480px;
-
-      .hero & {
-        display: flex;
-        text-align: center;
-        outline: 1px solid teal;
-      }
-    }
-
-    .text-section & {
-      display: flex;
-      justify-content: center;
-      outline: 1px solid teal;
-    }
-    .team-section & {
-      display: flex;
-      justify-content: center;
-      outline: 1px solid brown;
-    }
-    .customer-section & {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      outline: 1px solid pink;
-    }
-    .footer & {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      outline: 1px solid red;
-      text-align: center;
     }
   }
+
   @media screen and (min-width: 768px) {
     .container {
       width: 768px;
-
-      
-    }
-     .footer & {
       display: flex;
       flex-wrap: wrap;
-      width: 50%;
+    }
   }
   @media screen and (min-width: 1200px) {
     .container {
       width: 1200px;
 
       .servises-section & {
-        display: flex;
-        flex-wrap: wrap;
         padding: 0px -15px;
         font-size: 0px;
         outline: 1px solid tomato;
@@ -64,6 +28,39 @@
     }
   }
 }
+//}
+
+//   .hero & {
+//     display: flex;
+//     text-align: center;
+//     outline: 1px solid teal;
+
+//      .text-section & {
+//   display: flex;
+//   justify-content: center;
+//   outline: 1px solid teal;
+// }
+//   }
+
+//   .team-section & {
+//     display: flex;
+//     justify-content: center;
+//     outline: 1px solid brown;
+//   }
+//   .customer-section & {
+//     display: flex;
+//     flex-wrap: wrap;
+//     justify-content: center;
+//     outline: 1px solid pink;
+//   }
+//   .footer & {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     outline: 1px solid red;
+//     text-align: center;
+//   }
+// }
 
 // .container {
 //   margin: 0 auto;

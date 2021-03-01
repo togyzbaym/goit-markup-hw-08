@@ -16,25 +16,19 @@
 }
 .text-list-itme {
   display: flexbox;
+  width: 450px;
 
   &::before {
     content: "";
     display: block;
     width: 70px;
     height: 70px;
-    padding: 60px 225px;
+    padding: 50px 225px;
     margin-bottom: 30px;
     background-color: #f5f4fa;
     background-position: center;
     background-repeat: no-repeat;
   }
-
-  &:not(:last-child) {
-    @media screen and(max-width:767px) {
-      margin-bottom: 30px;
-    }
-  }
-
   @media screen and (min-width: 768px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
