@@ -21,27 +21,62 @@
         <div class=" container">
             <nav class="navigation studio">
                 <a class="logo-link links lists" href="#">Web<span class="logo-part-name">Studio</span></a>
-                <ul class="nav-list links">
-                    <li class="nav-list-itme"><a class="nav-list-link links lists" href="#">Студия</a></li>
-                    <li class="nav-list-itme"><a class="nav-list-link links lists" href="portfolio.html" target="_blank">Портфолио</a></li>
-                    <li class="nav-list-itme"><a class="nav-list-link links lists" href="#">Контакты</a></li>
+                <ul class="nav-list lists">
+                    <li class="nav-list-itme"><a class="nav-list-link links" href="#">Студия</a></li>
+                    <li class="nav-list-itme"><a class="nav-list-link links" href="portfolio.html" target="_blank">Портфолио</a></li>
+                    <li class="nav-list-itme"><a class="nav-list-link links" href="#">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contact-list">
+            <button type="button" class="burger-btn" data-menu-button>
+                <svg class="burger-icon">
+                    <use href="./images/svg/sprite.svg#burger-icon"></use>
+                </svg>
+            </button>
+            <ul class="contact-list lists">
                
-                <li class="contact-list-itme lists ">
+                <li class="contact-list-itme  ">
                    <a class="contact-list-link links" href="mailto:info@devstudio.com"><svg class="my-mail">
                        <use href="./images/svg/sprite.svg#icon-mail"></use>
                    </svg> info@devstudio.com</a>
                 </li>
-                <li class="contact-list-itme lists ">
+                <li class="contact-list-itme ">
                     <a class="contact-list-link links" href="tel:+380961111111"><svg class="my-phone">
                         <use href="./images/svg/sprite.svg#icon-phone"></use>
                     </svg> +38 096 111 11 11</a>
                 </li>
             </ul>
         </div>
-        
+        <div class="mobile-menu" data-menu>
+            <button type="button" class="close-btn" data-menu-close>
+                <svg class="close-icon">
+                    <use href="./images/svg/sprite.svg#close-icon"></use>
+                </svg>
+            </button>
+            <ul class="mobile-menu-nav lists">
+                <li class="mobile-menu-nav-itme">
+                    <a href="" class="mobile-menu-link links">Студия</a>
+                </li>
+                <li class="mobile-menu-nav-itme">
+                    <a href="" class="mobile-menu-link links">Портфолио</a>
+                </li>
+                <li class="mobile-menu-nav-itme">
+                    <a href="" class="mobile-menu-link links">Контакты</a>
+            </ul>
+            <ul class="mobile-menu-contsct lists">
+                <li class="mobile-menu-contsct-itme">
+                    <a href="mailto:info@devstudio.com" class="mobile-menu-contact-link links">
+                        <svg class="my-mail">
+                            <use href="./images/svg/sprite.svg#icon-mail"></use>
+                        </svg>info@devstudio.com</a>
+                </li>
+                <li class="mobile-menu-contsct-itme">
+                    <a href="tel:+380961111111" class="mobile-menu-contact-link links">
+                        <svg class="my-phone">
+                            <use href="./images/svg/sprite.svg#icon-phone"></use>
+                        </svg>+38 096 111 11 11</a>
+                </li>
+            </ul>
+        </div>
     </header>
 
     <main class="main-container container">
@@ -488,6 +523,7 @@
                 
             </form>
         </div>
-    </div>
-    <script src="./js/modal.js"></script> -->
+    </div>-->
+    <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
 </body>
