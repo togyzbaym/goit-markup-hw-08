@@ -15,50 +15,90 @@
   }
 }
 .text-list-itme {
-  display: flexbox;
-  width: 450px;
-
-  &::before {
-    content: "";
-    display: block;
-    width: 70px;
-    height: 70px;
-    padding: 50px 225px;
+  //display: flexbox;
+  width: 100%;
+  &:not(:last-child) {
     margin-bottom: 30px;
-    background-color: #f5f4fa;
-    background-position: center;
-    background-repeat: no-repeat;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and(min-width:768px) {
     width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-
-    &::before {
-      padding: 60px 180px;
-    }
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and(min-width:1200px) {
     width: calc((100% - 4 * 30px) / 4);
-    margin: 15px;
-
-    &::before {
-      padding: 60px 135px;
-    }
   }
 }
-.icon-tarelka::before {
-  background-image: url("/images/svg/tarelka.svg");
+.icon-box {
+  position: relative;
+  display: block;
+  //width: 100%;
+  max-width: 450px;
+  height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+
+  @media screen and(min-width:768px) {
+    width: 354px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 270px;
+  }
 }
-.icon-clock::before {
-  background-image: url("/images/svg/clock.svg");
+.my-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
 }
-.icon-diagram::before {
-  background-image: url("/images/svg/diagram.svg");
-}
-.icon-cosmonaut::before {
-  background-image: url("/images/svg/cosmonaut.svg");
-}
+
 .discreption {
   @include font(14px, 400, 24px);
   color: var(--discreption-color);
 }
+// &::before {
+//   content: "";
+//   display: block;
+//   width: 70px;
+//   height: 70px;
+//   padding: 50px auto;
+//   margin-bottom: 30px;
+//   background-color: #f5f4fa;
+//   background-position: center;
+//   background-repeat: no-repeat;
+// }
+// @media screen and (min-width: 768px) {
+//   width: calc((100% - 2 * 30px) / 2);
+//   margin: 15px;
+
+//   &::before {
+//     padding: 60px 180px;
+//   }
+// }
+// @media screen and (min-width: 1200px) {
+//   width: calc((100% - 4 * 30px) / 4);
+//   margin: 15px;
+
+//   &::before {
+//     padding: 60px 135px;
+//   }
+// }
+
+// .icon-tarelka::before {
+//   background-image: url("/images/svg/tarelka.svg");
+// }
+// .icon-clock::before {
+//   background-image: url("/images/svg/clock.svg");
+// }
+// .icon-diagram::before {
+//   background-image: url("/images/svg/diagram.svg");
+// }
+// .icon-cosmonaut::before {
+//   background-image: url("/images/svg/cosmonaut.svg");
+// }
+// .discreption {
+//   @include font(14px, 400, 24px);
+//   color: var(--discreption-color);
+// }

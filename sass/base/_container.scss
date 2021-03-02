@@ -1,11 +1,16 @@
 .container {
   width: 100%;
   padding: 0 15px;
+  margin: 0 auto;
 
   .header & {
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+  .hero & {
+    display: block;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 480px) {
@@ -16,15 +21,15 @@
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 738px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
-    justify-content: center;
+    width: 1170px;
 
     .servises-section & {
       padding: 0px -15px;

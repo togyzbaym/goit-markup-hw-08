@@ -10,18 +10,26 @@
 .modal {
   position: absolute;
   background-color: #ffffff;
-  width: 528px;
-  height: 581px;
+  width: 100%;
+  max-width: 450px;
+  height: 95%;
+  max-height: 609px;
+  overflow: scroll;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @media screen and(min-width:1200px) {
+    max-width: 528px;
+    max-height: 565px;
+    overflow: hidden;
+  }
 }
 .modal-close-btn {
   position: absolute;
   width: 30px;
   height: 30px;
   top: 8px;
-  right: 8px;
+  right: 12px;
   border-radius: 50%;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
