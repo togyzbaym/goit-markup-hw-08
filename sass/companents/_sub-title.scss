@@ -1,10 +1,11 @@
 .sub-title {
   @include font(16px, 400, 19px);
-  text-align: center;
+
   color: var(--discreption-color);
 
   .team-list-itme & {
     margin-bottom: 16px;
+    text-align: center;
   }
 }
 //}

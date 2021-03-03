@@ -1,10 +1,30 @@
 .portfolio-galery-list {
-  display: flex;
-  flex-wrap: wrap;
   margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .galery-list-itme {
   margin: 15px;
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 2 * 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 3 * 30px) / 3);
+  }
+}
+
+.galery-list-img {
+  // width: 100%;
+  max-width: 450px;
+  @media screen and (min-width: 768) {
+    max-width: 354px;
+  }
+  @media screen and (min-width: 1200) {
+    width: calc((100% - 4 * 30px) / 4);
+    max-width: 370px;
+  }
 }
 .galegry-list-link {
   display: block;

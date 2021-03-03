@@ -105,7 +105,7 @@
   }
 }
 @media screen and(min-width: 768px) {
-  .contact-list {
+  .header .contact-list {
     // @include align();
     margin-left: auto;
   }
@@ -119,11 +119,11 @@
   }
 }
 @media screen and(min-width: 1200px) {
-  .contact-list {
+  .header .contact-list {
     @include align();
     justify-content: center;
   }
-  .contact-list-itme {
+  .header .contact-list-itme {
     @include align();
     justify-content: center;
     height: 16px;
@@ -184,6 +184,6 @@
     height: 14px;
   }
 }
-// .portfolio .header {
-//   border-bottom: 1px solid #ececec;
-// }
+.portfolio .header {
+  border-bottom: 1px solid #ececec;
+}
