@@ -15,6 +15,12 @@
   .team-section & {
     //margin: -15px;
   }
+  .footer &{
+    @media screen and (max-width: 1199px){
+       flex-wrap: wrap;
+    }
+   
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -39,11 +45,6 @@
       font-size: 0px;
       outline: 1px solid tomato;
     }
-    .footer & {
-      flex-wrap: nowrap;
-     // justify-content: space-between;
-    align-items: baseline;
-  }
 }
 //   .hero & {
 //     display: flex;
