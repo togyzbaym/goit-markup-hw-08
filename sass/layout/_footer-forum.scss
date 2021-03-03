@@ -10,13 +10,10 @@
   margin-bottom: 20px;
 }
 .footer-user-contact-wraper {
-  // @media screen and(min-width:480px) {
-  //position: relative;
   @include align();
   flex-direction: column;
   justify-content: center;
 }
-//}
 
 .footer-forum .user-cont-input {
   width: 100%;

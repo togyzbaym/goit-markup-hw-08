@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-
+  outline: 1px solid red;
   .header & {
     display: flex;
     align-items: center;
@@ -12,10 +12,13 @@
     display: block;
     margin: 0 auto;
   }
+  .team-section & {
+    //margin: -15px;
+  }
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    width: 450px;
     margin: 0 auto;
   }
 }
@@ -36,6 +39,10 @@
       font-size: 0px;
       outline: 1px solid tomato;
     }
+    .footer & {
+      flex-wrap: nowrap;
+     // justify-content: space-between;
+    align-items: baseline;
   }
 }
 //   .hero & {
