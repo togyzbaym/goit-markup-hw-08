@@ -15,17 +15,6 @@
   }
 }
 
-.galery-list-img {
-  // width: 100%;
-  max-width: 450px;
-  @media screen and (min-width: 768) {
-    max-width: 354px;
-  }
-  @media screen and (min-width: 1200) {
-    width: calc((100% - 4 * 30px) / 4);
-    max-width: 370px;
-  }
-}
 .galegry-list-link {
   display: block;
   outline: 1px solid #eeeeee;
@@ -62,10 +51,10 @@
 .galery-list-img {
   width: 100%;
   max-width: 450px;
-  @media screen and(min-width: 768px) {
-    width: 354px;
+  @media screen and (min-width: 768) {
+    max-width: 354px;
   }
-  @media screen and(min-width: 1200px) {
-    width: 370px;
+  @media screen and (min-width: 1200) {
+    max-width: 370px;
   }
 }
