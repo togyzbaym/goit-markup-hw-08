@@ -8,11 +8,8 @@
 }
 
 .servises-list {
-  @media screen and(min-width:1200px) {
-    display: flex;
-    margin-right: 0;
-    justify-content: space-between;
-  }
+  display: flex;
+  margin: 0 -15px;
 }
 .servises-list-itme {
   @media screen and(min-width:1200px) {

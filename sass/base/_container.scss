@@ -2,7 +2,7 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  outline: 1px solid red;
+  // outline: 1px solid red;
   .header & {
     display: flex;
     align-items: center;
@@ -12,11 +12,6 @@
     display: block;
     margin: 0 auto;
   }
-  // .footer & {
-  //   @media screen and (max-width: 1199px) {
-  //     flex-wrap: wrap;
-  //   }
-  // }
 }
 @media screen and (min-width: 480px) {
   .container {
@@ -29,88 +24,14 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
-    // justify-content: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
 
-    .servises-section & {
-      padding: 0px -15px;
-      font-size: 0px;
-      outline: 1px solid tomato;
-    }
     .footer & {
       align-items: baseline;
     }
   }
 }
-//   .hero & {
-//     display: flex;
-//     text-align: center;
-//     outline: 1px solid teal;
-
-//      .text-section & {
-//   display: flex;
-//   justify-content: center;
-//   outline: 1px solid teal;
-// }
-//   }
-
-//   .team-section & {
-//     display: flex;
-//     justify-content: center;
-//     outline: 1px solid brown;
-//   }
-//   .customer-section & {
-//     display: flex;
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     outline: 1px solid pink;
-//   }
-//   .footer & {
-//     display: flex;
-//     flex-direction: column;
-//     justify-content: center;
-//     outline: 1px solid red;
-//     text-align: center;
-//   }
-// }
-
-// .container {
-//   margin: 0 auto;
-
-//   .header & {
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin: auto auto;
-//     justify-content: center;
-//     display: flex;
-//   }
-//   .portfolio-section & {
-//     @include align();
-//     flex-wrap: wrap;
-//     justify-content: center;
-//     width: 1200px;
-//     padding: 0 15px;
-//     margin-left: auto;
-//     margin-right: auto;
-//     padding-bottom: 94px;
-//   }
-//   .hero & {
-//     display: flex;
-//     flex-direction: column;
-//     flex-wrap: wrap;
-//     width: 1200px;
-//     padding: 0 15px;
-//     /*outline: 2px solid tomato;*/
-//     margin-left: auto;
-//     margin-right: auto;
-//   }
-
-//   }
-// }
-// .portfolio-section {
-//   padding-top: 94px;
-// }

@@ -59,3 +59,13 @@
     transform: translateY(0%);
   }
 }
+.galery-list-img {
+  width: 100%;
+  max-width: 450px;
+  @media screen and(min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+  }
+}
