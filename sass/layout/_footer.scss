@@ -50,7 +50,9 @@
 .footer .contact-list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 60px;
+  @media screen and(max-width:1199px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer .contact-list-itme {

@@ -4,8 +4,10 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #ffffff;
-    //vertical-align: middle;
     margin-bottom: 30px;
+    @media screen and(min-width:1200px) {
+      @include font(44px, 900, 60px);
+    }
   }
   .text-list-itme & {
     @include font(14px, 700, 16px);
@@ -31,7 +33,7 @@
     @media screen and (min-width: 1200px) {
       @include font(36px, 700, 42px);
       text-align: center;
-      margin-bottom: 30px;
+      margin-bottom: 50px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -44,7 +46,7 @@
 
   .servises-section & {
     @include font(36px, 700, 42px);
-    font-family: Raleway;
+    font-family: Roboto;
     text-align: center;
     color: var(--titles-color);
     margin-left: auto;

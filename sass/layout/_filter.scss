@@ -1,18 +1,27 @@
-.filter-list {
-  margin-bottom: 40px;
-  margin-top: -15px;
-  font-size: 0;
+.filter-box {
+  padding-top: 60px;
+  padding-bottom: 40px;
   @media screen and(min-width: 768px) {
     display: flex;
-    margin: 60px auto 30px auto;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
   }
   @media screen and(min-width: 1200px) {
-    display: flex;
-    margin: 94px auto 50px auto;
+    padding-top: 94px;
+    padding-bottom: 50px;
+  }
+}
+.filter-list {
+  font-size: 0;
+  @media screen and(max-width:767px) {
+    margin-bottom: -15px;
   }
 }
 .filter-list-itme {
   display: inline-block;
   font-size: 0;
-  margin-top: 15px;
+  @media screen and(max-width:767px) {
+    margin-bottom: 15px;
+  }
 }

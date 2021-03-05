@@ -21,6 +21,9 @@
   right: 15px;
 }
 .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   width: 100%;
   max-width: 480px;
@@ -50,6 +53,9 @@
   &:not(:last-child) {
     margin-bottom: 32px;
   }
+}
+.mobile-menu-bottom {
+  margin-top: auto;
 }
 .mobile-menu-contsct-list {
   margin-bottom: 64px;
@@ -98,9 +104,6 @@
 .social-set {
   width: 357px;
   display: flex;
-  //flex-wrap: wrap;
-  //justify-content: space-between;
-}
 .social-set-itme {
   position: relative;
   &:not(:last-child) {

@@ -2,7 +2,6 @@
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
-  // outline: 1px solid red;
   .header & {
     display: flex;
     align-items: center;
@@ -11,14 +10,6 @@
   .hero & {
     display: block;
     margin: 0 auto;
-  }
-  .portfolio-section & {
-    @media screen and(max-width:1199px) {
-      margin-bottom: 60px;
-    }
-    @media screen and(min-width:1200px) {
-      margin-bottom: 94px;
-    }
   }
 }
 @media screen and (min-width: 480px) {
@@ -32,6 +23,9 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+    .footer & {
+      justify-content: space-between;
+    }
   }
 }
 @media screen and (min-width: 1200px) {

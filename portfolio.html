@@ -19,8 +19,8 @@
             <nav class="navigation">
                 <a class="logo-link links" href="#">Web<span class="logo-part-name">Studio</span></a>
                 <ul class="nav-list">
-                    <li class="nav-list-itme"><a class="nav-list-link links" href="#">Студия</a></li>
-                    <li class="nav-list-itme"><a class="nav-list-link links" href="#">Портфолио</a></li>
+                    <li class="nav-list-itme"><a class="nav-list-link links" href="index.html">Студия</a></li>
+                    <li class="nav-list-itme"><a class="nav-list-link links" href="href="portfolio.html" target="_blank"">Портфолио</a></li>
                     <li class="nav-list-itme"><a class="nav-list-link links" href="#">Контакты</a></li>
                 </ul>
             </nav>
@@ -88,7 +88,7 @@
     <section class="portfolio-section">
         <div class="container">
             <h1 hidden>Портфолио</h1>
-            
+            <div class="filter-box">
                 <ul class="filter-list lists">
                     <li class="filter-list-itme"><button class="filter-modal-btn" type="button">Все</button></li>
                     <li class="filter-list-itme"><button class="filter-modal-btn" type="button">Веб-сайты</button></li>
@@ -96,6 +96,8 @@
                     <li class="filter-list-itme"><button class="filter-modal-btn" type="button">Дизайн</button></li>
                     <li class="filter-list-itme"><button class="filter-modal-btn" type="button">Маркетинг</button></li>
                 </ul>
+            </div>
+                
             
            
                 <ul class="portfolio-galery-list ">
@@ -395,7 +397,7 @@
     <!--footer container-->
     <footer class="footer">
         <div class="container">
-            <div class="footer-contacts">
+            <div class="footer-contacts footer-child">
                 <a class="logo-link links" href="#">Web<span class="logo-part-name">Studio</span></a>
                 <address class="address">
                     <a class="address-link" href="https://goo.gl/maps/RLjfEgPPpNQvGcjaA" target="_blank">г.Киев,
@@ -404,12 +406,14 @@
                 </address>
                 <ul class="contact-list">
                     <li class="contact-list-itme lists"><a class="contact-list-link links"
-                            href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact-list-itme lists"><a class="contact-list-link links" href="tel:+380961111111">+38 096 111 11
+                            href="mailto:info@devstudio.com">info@devstudio.com</a>
+                    </li>
+                    <li class="contact-list-itme lists"><a class="contact-list-link links" href="tel:+380961111111">+38 096
+                            111 11
                             11</a></li>
                 </ul>
             </div>
-            <div class="social-media">
+            <div class="social-media footer-child">
                 <h3 class="title">присоединяйтесь</h3>
                 <ul class="social-media-list">
                     <li class="social-media-list-itme lists">
@@ -442,23 +446,20 @@
                     </li>
                 </ul>
             </div>
-            
-                <forum class="footer-forum">
-                    <b class="call-to-action">Подпишитесь на рассылку</b>
-                    <div class="footer-user-contact-wraper">
-                        <input type="email" class="user-cont-input" id="user-email" placeholder="Email" required>
-                        <button class="forum-submit">Подписаться
-                            <svg class="user-send-icon">
-                                <use href="./images/svg/sprite.svg#footer-send-icon"></use>
-                            </svg>
-                        </button>
-                        
-                    </div>
-                </forum>
-            
-           
+    
+            <forum class="footer-forum footer-child">
+                <b class="call-to-action">Подпишитесь на рассылку</b>
+                <div class="footer-user-contact-wraper">
+                    <input type="email" class="user-cont-input" id="user-email" placeholder="Email" required>
+                    <button type="submit" class="forum-submit">Подписаться
+                        <svg class="user-send-icon">
+                            <use href="./images/svg/sprite.svg#footer-send-icon"></use>
+                        </svg>
+                    </button>
+                </div>
+            </forum>
         </div>
-       
+    
     </footer>
 <script src="./js/mobile-menu.js"></script>
 </body>
